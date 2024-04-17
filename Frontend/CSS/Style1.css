@@ -29,8 +29,8 @@ body, html {
 
 /* Top Navigation Bar Styles */
 .top-nav-container {
-    background-color: #000000; /* Mizzou Black */
-    color: #F1B82D; /* Mizzou Gold */
+    background-color: var(--mizzou-black); 
+    color: var(--mizzou-black); 
     width: 100%;
     padding: 0.5rem; /* Adjust the padding as needed */
 }
@@ -40,10 +40,11 @@ body, html {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    font-size: x-large;
 }
 
 .logo-container img {
-    height: 50px; /* Adjust the size as needed */
+    height: 80px; /* Adjust the size as needed */
     width: auto;
     margin-right: 1rem;
 }
@@ -165,4 +166,47 @@ footer {
     .category-listing {
         grid-template-columns: 1fr; /* Stack items in a single column on smaller screens */
     }
+}
+
+#map {
+    height: 400px; /* Adjust as needed */
+}
+
+.parking-listing {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adapt number of columns to container width */
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.parking-item {
+    background-color: var(--light-gray); /* Light gray color for the item background */
+    border-radius: 10px;
+    overflow: hidden; /* Keeps the child image within the rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.parking-item:hover {
+    transform: translateY(-5px);
+}
+
+.parking-item a {
+    display: block;
+    color: var(--mizzou-black); /* Mizzou Black for text */
+    text-decoration: none;
+}
+
+.parking-item img {
+    width: 100%; /* Ensures the image covers the width */
+    height: auto; /* Adjusts the height automatically */
+    border-bottom: 5px solid var(--mizzou-gold); /* Mizzou Gold border below the image */
+}
+
+.parking-item p {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background-color: var(--mizzou-gold); /* Mizzou Gold for the title background */
+    color: var(--mizzou-black); /* Mizzou Black for the title text */
 }

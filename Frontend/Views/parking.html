@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mizzou 101 Parking</title>
+    <link rel="stylesheet" href="../CSS/Style1.css">
+</head>
+<body style="background-image: url('https://img.freepik.com/free-vector/black-carbon-fiber-texture-pattern-background_1017-33436.jpg?w=1060&t=st=1712242325~exp=1712242925~hmac=1ad73ffc1ebff180e9ba1c102a4459d73fd12893015ddd9eab44e19c5fd2af31'); 
+background-size: cover; background-position: center; background-attachment: fixed;">
+    <header>
+        <div class="top-nav-container">
+            <nav class="top-nav">
+                <div class="logo-container">
+                    <a href="HomePage.html">
+                        <img src="Mizzou101 Logo.png" alt="Mizzou Logo" class="logo">
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="parking.html">Parking</a>
+                    <!-- Include other links as necessary -->
+                </div>
+                <div class="search-container">
+                    <input type="search" placeholder="Search Mizzou 101...">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Google API Map -->
+        <div id="map"></div>
+
+        <!-- Parking Garages Listing -->
+        <section id="parking-garages" class="category-section">
+            <h2 class="category-title">Parking Garages</h2>
+            <div class="parking-listing">
+                <!-- Placeholder for Parking Garage 1 -->
+                <div class="parking-item">
+                    <a href="garage1-description.html">
+                        <img src="placeholder-garage1.jpg" alt="Garage 1">
+                        <p>Garage 1</p>
+                    </a>
+                </div>
+                <!-- Placeholder for Parking Garage 2 -->
+                <div class="parking-item">
+                    <a href="garage2-description.html">
+                        <img src="placeholder-garage2.jpg" alt="Garage 2">
+                        <p>Garage 2</p>
+                    </a>
+                </div>
+                <!-- Placeholder for Parking Garage 3 -->
+                <div class="parking-item">
+                    <a href="garage3-description.html">
+                        <img src="placeholder-garage3.jpg" alt="Garage 3">
+                        <p>Garage 3</p>
+                    </a>
+                </div>
+                <!-- Add more placeholders as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mizzou 101. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to Google Maps JavaScript API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script>
+        // Placeholder for initializing the Google Map
+        function initMap() {
+            var mapOptions = {
+                zoom: 15,
+                center: { lat: 38.9404, lng: -92.3277 } // Coordinates of Mizzou
+            };
+            var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+            
+            // Further map setup and garage markers go here
+        }
+    </script>
+</body>
+</html>
