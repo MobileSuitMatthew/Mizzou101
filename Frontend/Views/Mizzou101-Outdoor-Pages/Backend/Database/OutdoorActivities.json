@@ -1,0 +1,107 @@
+[
+    {
+        "_id": 1,
+        "Name": "A.L. Gustin Golf Course",
+        "Address": "18 Stadium Blvd, Columbia, MO 65203",
+        "Website": "http://www.gustingolfcourse.com/",
+        "Tag": "Outdoor"
+    },
+    {
+        "_id": 2,
+        "Name": "Stephens Lake Park",
+        "Address": "2001 E Broadway, Columbia, MO 65201",
+        "Website": "https://www.como.gov/parksandrec/park/stephens-lake-park/",
+        "Tag": "Outdoor"
+    },
+    {
+        "_id": 3,
+        "Name": "Peace Park",
+        "Address": "401 S 9th St, Columbia, MO 65201",
+        "Website": "http://missouri.edu/",
+        "Tag": "Outdoor"
+    },
+    {
+        "_id": 4,
+        "Name": "Country Club of Missouri",
+        "Address": "1300 Woodrail Ave, Columbia, MO 65203",
+        "Website": "http://www.ccmo.net/",
+        "Tag": "Outdoor"
+    },
+    {
+        "_id": 5,
+        "Name": "The Links",
+        "Address": "5000 Clark Ln Ste 1, Columbia, MO 65202",
+        "Website": "https://www.linksatcolumbia.apartments/custompage.aspx?sectionid=373766",
+        "Tag": "Outdoor"
+    },
+    {
+        "_id": 6,
+        "Name": "Midway Golf and Games",
+        "Address": "5500 W Van Horn Tavern Rd, Columbia, MO 65203",
+        "Website": "https://midwaygolfgames.com/",
+        "Tag": "Outdoor"
+    },
+    {
+        "_id": 7,
+        "Name": "Capen Park",
+        "Address": "1600 Capen Park Dr, Columbia, MO 65201",
+        "Website": "https://www.como.gov/parks/capen-park/",
+        "Tag": "Outdoor"
+    },
+    {
+        "_id": 8,
+        "Name": "Clyde Wilson Memorial Park",
+        "Address": "1627 Rollins St, Columbia, MO 65201",
+        "Website": "http://www.gocolumbiamo.com/",
+        "Tag": "Outdoor"
+    },
+    {
+        "_id": 9,
+        "Name": "MKT Trail",
+        "Address": "3725 S. Scott Blvd",
+        "Website": "https://www.como.gov/trails/mkt-nature-and-fitness-trail/",
+        "Tag": "Outdoor"
+    },
+    {
+        "_id": 10,
+        "Name": "Harmony Bends Disc Golf Course",
+        "Address": "801 N Strawn Rd, Columbia, MO 65203",
+        "Website": "https://www.como.gov/parksandrec/facilities/harmony-bends-championship-disc-golf-course-strawn-park/",
+        "Tag": "Outdoor"
+    },
+    {
+        "_id": 11,
+        "Name": "Devil’s Icebox",
+        "Address": "Sinkhole Trail, Columbia, MO 65203",
+        "Website": "https://mostateparks.com/location/55460/devils-icebox-entrance",
+        "Tag": "Outdoor"
+    },
+    {
+        "_id": 12,
+        "Name": "Shooting Stars Trailhead",
+        "Address": "5499 E Bonne Femme Church Rd #5411, Columbia, MO 65201",
+        "Website": "https://mostateparks.com/trails/rock-Bridge-Memorial-state-park?type=hiking",
+        "Tag": "Outdoor"
+    },
+    {
+        "_id": 13,
+        "Name": "Eagle bluffs",
+        "Address": "6700 W Rte K",
+        "Website": "https://mdc.mo.gov/discover-nature/places/eagle-bluffs-conservation-area",
+        "Tag": "Outdoor"
+    },
+    {
+        "_id": 14,
+        "Name": "Grindstone Nature Area",
+        "Address": "2011 Old 63 S",
+        "Website": "https://www.como.gov/parks/grindstone-nature-area/",
+        "Tag": "Outdoor"
+    },
+    {
+        "_id": 15,
+        "Name": "Francis Quad/Columns",
+        "Address": "410 S 6th St",
+        "Website": "http://www.missouri.edu/",
+        "Tag": "Outdoor"
+    }
+]
