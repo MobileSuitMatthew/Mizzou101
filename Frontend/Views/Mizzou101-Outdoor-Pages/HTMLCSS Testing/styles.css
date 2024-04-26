@@ -1,0 +1,175 @@
+/* Add styles for header */
+header {
+    background-color: #ffd700; /* Gold background color */
+    color: #000; /* Text color */
+    text-align: center;
+    padding: 20px;
+}
+
+.home-options ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.home-options ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.home-options ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Add styles for side navigation */
+.side-navigation {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 200px;
+    text-align: center;
+    border-right: 1px solid #ccc; /* Add vertical line */
+    padding-right: 20px;
+    background-color: transparent; /* Set background to transparent */
+}
+
+.side-navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-navigation ul li {
+    margin-bottom: 10px;
+}
+
+.side-navigation ul li a {
+    text-decoration: none;
+    color: #fff; /* Set text color to white */
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px; /* Add padding for spacing */
+    border-radius: 8px; /* Add border radius to match the list item */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.side-navigation ul li a:hover,
+.side-navigation ul li a.active {
+    background-color: #ffd700; /* Yellow background color on hover and active */
+    color: #000; /* Text color */
+}
+
+.side-navigation ul li a::after {
+    content: '';
+    display: block;
+    width: 10px; /* Width of the vertical bar */
+    height: 100%;
+    background-color: #ccc; /* Color of the vertical bar */
+    position: absolute;
+    top: 0;
+    left: 100%; /* Position the bar to the right of the link */
+}
+
+/* Add styles for container */
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 220px; /* Adjust according to side navigation width */
+}
+
+/* Add styles for search and list container */
+.search-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Add styles for search container */
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    padding: 8px;
+    width: 200px;
+}
+
+/* Updated styles for list-box */
+.list-box {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Add spacing between items */
+    padding: 20px;
+    list-style: none;
+}
+
+/* Updated styles for list-box item */
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    padding: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Include box-shadow in transition */
+    background-color: #ffd700;
+}
+
+.item:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
+}
+
+.item img {
+    width: 150px; /* Adjust image width as needed */
+    height: 150px; /* Adjust image height as needed */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.item p {
+    font-size: 16px; /* Increase font size for item name */
+    color: #000; /* Text color */
+    margin: 0;
+}
+
+
+/* Add styles for search container */
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative; /* Add position relative */
+}
+
+/* Add line beneath search box */
+.search-container::after {
+    content: '';
+    display: block;
+    width: calc(100% - 1px); /* Adjust width as needed */
+    height: 1px; /* Line thickness */
+    background-color: #ccc; /* Line color */
+    position: absolute;
+    bottom: -10px; /* Adjust vertical position */
+    left: 50%;
+    transform: translateX(-50%); /* Center the line */
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/*https://img.freepik.com/free-vector/black-carbon-fiber-texture-pattern-background_1017-33436.jpg?w=1060&t=st=1712242325~exp=1712242925~hmac=1ad73ffc1ebff180e9ba1c102a4459d73fd12893015ddd9eab44e19c5fd2af31'
+

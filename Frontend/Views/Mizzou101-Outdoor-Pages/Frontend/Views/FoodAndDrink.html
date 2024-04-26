@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Mizzou 101</title>
+    <link rel="stylesheet" href="..\CSS\Style1.css">
+</head>
+<body style="background-image: url('https://img.freepik.com/free-vector/black-carbon-fiber-texture-pattern-background_1017-33436.jpg?w=1060&t=st=1712242325~exp=1712242925~hmac=1ad73ffc1ebff180e9ba1c102a4459d73fd12893015ddd9eab44e19c5fd2af31'); 
+background-size: cover; background-position: center; background-attachment: fixed;">
+    <header>
+        <div class="top-nav-container">
+            <nav class="top-nav">
+                <div class="logo-container">
+                    <a href="HomePage.html">
+                        <img src="Mizzou101 Logo.png" alt="Mizzou Logo" class="logo">
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="HomePage.html">Home</a>
+                    <a href="FoodAndDrink.html">Food and Drink</a>
+                    <a href="Clubs.html">Clubs</a>
+                    <a href="parking.html">Parking</a>
+                    <a href="StudentServices.html">Student Services</a>
+                    <a href="outdoorActivities.html">Outdoor Activities</a>
+                </div>
+            </nav>
+               
+        </div>
+    </header>
+
+    <main>
+        <section class="introduction">
+            <h1>Welcome to the Food and Drink Page</h1>
+            <p>Discover the many great and diverse food options that Columbia has to offer. 
+                Ranging from On Campus, Downtown Columbia, and all the bars Columbia has to offer.</p>
+        </section>
+        <section class="category-section">
+            <div class="search-container">
+                <input type="search" id="searchInput" placeholder="Search..." oninput="performSearch()">
+            </div>
+        </section>
+
+        <!-- Food and Drink Section -->
+        <!-- Food and Drink - Top 3 Spots -->
+        <section id="top-spots" class="category-section">
+            <h2 class="category-title">Top 3 Spots</h2>
+            <div class="category-listing" id="top-spots-listing">
+                <!-- Top 3 spots will be injected here -->
+            </div>
+        </section>
+
+        <!-- Food and Drink - Full Listing -->
+        <section id="all-food-drink" class="category-section">
+            <h2 class="category-title">All Food And Drinks</h2>
+            <div class="category-listing" id="all-food-drink-listing">
+                <!-- Full listing will be injected here -->
+            </div>
+        </section>
+
+ 
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mizzou 101. All rights reserved. Team Azul.</p>
+    </footer>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            fetchFoodAndDrinkData();
+        });
+    
+        function fetchFoodAndDrinkData() {
+            fetch('https://nodejs.mizzou101.com/api/data/FoodDrink')
+                .then(response => response.json())
+                .then(data => {
+                    populateTopSpots(data);
+                    populateAllFoodDrinks(data);
+                })
+                .catch(error => {
+                    console.error('Error fetching Food and Drink data:', error);
+                });
+        }
+    
+        function populateTopSpots(data) {
+            const sortedData = [...data].sort((a, b) => a.Rank - b.Rank); // Sort by rank
+            const topSpots = sortedData.slice(0, 3); // Get top 3 spots
+            const listingContainer = document.getElementById('top-spots-listing');
+            listingContainer.innerHTML = '';
+            
+            topSpots.forEach(item => {
+                const itemDiv = document.createElement('div');
+                itemDiv.className = 'category-item';
+                itemDiv.innerHTML = `
+                    <a href="DetailPage.html?id=${item._id}">
+                        <img src="${item.Photo}" alt="${item.Name}" class="logo">
+                        <p>${item.Name}</p>
+                        <p>Rank: ${item.Rank}</p>
+                    </a>
+                `;
+                listingContainer.appendChild(itemDiv);
+            });
+        }
+    
+        function populateAllFoodDrinks(data) {
+            const listingContainer = document.getElementById('all-food-drink-listing');
+            listingContainer.innerHTML = '';
+            
+            data.forEach(item => {
+                const itemDiv = document.createElement('div');
+                itemDiv.className = 'category-item';
+                itemDiv.innerHTML = `
+                    <a href="DetailPage.html?id=${item._id}">
+                        <img src="${item.Photo}" alt="${item.Name}" class="logo">
+                        <p>${item.Name}</p>
+                    </a>
+                `;
+                listingContainer.appendChild(itemDiv);
+            });
+        }
+    </script>
+    <script src= "../Scripts/Search.js"></script>
+    
+    
+</body>
+</html>
